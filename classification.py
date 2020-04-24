@@ -99,12 +99,12 @@ if __name__ == "__main__":
 
     sc = SparkSession.builder.master("local").appName("Demo").getOrCreate()
 
-    CV_data = sc.read.load('F:\\zengc_code\\TrainData\\churn\\churn-bigml-80.csv', 
+    CV_data = sc.read.load('****\\churn-bigml-80.csv', 
                               format='com.databricks.spark.csv', 
                               header='true', 
                               inferSchema='true')
     
-    final_test_data = sc.read.load('F:\\zengc_code\\TrainData\\churn\\churn-bigml-20.csv', 
+    final_test_data = sc.read.load('****\\churn-bigml-20.csv', 
                               format='com.databricks.spark.csv', 
                               header='true', 
                               inferSchema='true')
